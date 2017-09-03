@@ -9,14 +9,18 @@ class Validate{
     public :
     Validate();
     Validate(int);
+    ~Validate();
     bool palindromes(char *,int);
 };
 Validate::Validate(){
-    
+   
 }
 Validate::Validate(int size){
     this->size=size;
     this->c1=new char[this->size];
+}
+Validate::~Validate(){
+    *c1;
 }
 bool Validate::palindromes(char *c,int size){
         for(int i=size;i>=0;i--){
