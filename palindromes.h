@@ -20,7 +20,7 @@ Validate::Validate(int size){
     this->c1=new char[this->size];
 }
 Validate::~Validate(){
-    *c1;
+    delete c1;
 }
 bool Validate::palindromes(char *c,int size){
         for(int i=size;i>=0;i--){
